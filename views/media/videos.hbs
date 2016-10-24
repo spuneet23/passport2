@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="panel panel-default">
+       <div class="panel-heading">Videos</div>
+         <div class="panel-body">
+		    <table class="table">
+		    <thead>
+		      <tr>
+		        <th><input type="checkbox" id="check_all"></th>
+		        <th>Name</th>
+		        <th>Uploaded</th>
+		        <th>Preview</th>
+		        <th>Actions</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+              {{#each videos}}
+                <td><input type="checkbox" class="single_video"></td>
+                <td>{{name}}</td>
+                <td>{{uploaded}}</td>
+                <td>{{name}}</td>
+                <td>{{name}}</td>
+              {{/each}}
+		    </tbody>
+		  </table>
+		 </div>
+	  </div>
+	  <div class="footer_monitor">
+	    <a class="btn btn-success btn-lg" href="/media/videos/new"><span class="fa fa-plus"> </span> Add Video</a>
+	  </div>
+	 </div>
+  </div>
+</div>

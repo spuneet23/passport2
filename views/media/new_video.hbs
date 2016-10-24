@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading"> Add Video</div>
+        <div class="panel-body">
+	      <form method="post" enctype="multipart/form-data" action="/media/videos/upload" >
+			  <div class="form-group">
+			    <label for="video_name">Name:</label>
+			    <input type="text" class="form-control" id="video_name" name="video_name">
+			  </div>
+			  <div class="form-group">
+			    <label for="video_desc">Description:</label>
+			    <input type="text" class="form-control" id="video_desc" name="video_desc">
+			  </div>
+			  <div class="form-group">
+			    <label for="video_source">Source:</label>
+			    <input type="file" class="form-control" id="video_source" name="video_source">
+			  </div>
+			  <button type="submit" class="btn btn-success btn-lg">Save Device</button>
+			</form>
+		  </div>
+		</div>
+    </div>
+  </div>
+</div>
